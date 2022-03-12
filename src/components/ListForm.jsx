@@ -1,8 +1,12 @@
-function ListForm({ onSubmit }) {
+import { useListItems } from "../providers/ListItemsProvider";
+
+function ListForm() {
+  const { handleListItemsUpdate } = useListItems();
+
   const handleFormSubmit = (e) => {
     e.preventDefault();
 
-    onSubmit(e.target.elements[0].value);
+    handleListItemsUpdate(e.target.elements[0].value);
 
     e.target.elements[0].value = "";
   };
