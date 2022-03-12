@@ -18,6 +18,8 @@ const useCalculator = () => {
       setState((prev) => prev - 1);
       return;
     }
+
+    setState((prev) => prev - arg);
   };
 
   return {

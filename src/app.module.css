@@ -39,3 +39,8 @@
   display: flex;
   justify-content: space-between;
 }
+
+.input {
+  font-size: var(--font-size);
+  max-width: 100px;
+}
